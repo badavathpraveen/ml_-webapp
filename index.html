@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Lung Cancer Detector</title>
+</head>
+<body>
+    <h1>Lung Cancer Detection</h1>
+    <table>
+    <tr>
+    <td>
+        <div class="img">
+        <img src="lung.gif" alt="lung">
+    </div>
+    </td>
+    <td>
+    <div  class="content">
+    <h2>
+        Test your X-ray here !
+    </h2>
+    <p>
+        This project is based on a Dataset provided on kaggle. 
+        The accuracy of the model is around 91 %. <br>
+    <br><small> Note : These predictions are purely experimental and are not practically reliable.</small>
+    </p>
+
+    <form action="/result" method="POST">
+    <div class="drop">    
+    <label for="poster">Drop your image here. 
+        <small>(Only in png/jpg)</small></label>
+    <input type="file" name="poster" class="choose" accept="image/png, image/jpeg">
+    </div>
+    </div>
+    <input type="submit" value="Submit" class="btn">
+</form>
+    </td>
+    </tr>
+    </table>
+
+    <footer>
+        <a href="About" id="about">About</a>
+        <a href="team" id="team">Developers</a>
+    </footer>
+</body>
+</html>
